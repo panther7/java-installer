@@ -9,8 +9,8 @@ OS=${4:-`uname -s`}      # Linux | Darwin | Windows | etc
 
 case "$OS $ARCH $TYPE" in
 	"Linux x86_64 jdk")
-		JDK_URL="https://download.java.net/java/GA/jdk16.0.1/7147401fd7354114ac51ef3e1328291f/9/GPL/openjdk-16.0.1_linux-x64_bin.tar.gz"
-		JDK_SHA256="b1198ffffb7d26a3fdedc0fa599f60a0d12aa60da1714b56c1defbce95d8b235"
+		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-amd64.tar.gz"
+		JDK_SHA256="898562489c1540fc2573f283aff13fa0641cb63c37f178f5189bcd5da6a8c4eb"
 	;;
 	"Linux i686 jdk")
 		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-i586.tar.gz"
@@ -18,7 +18,7 @@ case "$OS $ARCH $TYPE" in
 	;;
 	"Linux aarch64 jdk")
 		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-aarch64.tar.gz"
-		JDK_SHA256="650f04865bdd3267ab7d1ae459dc34a430b6b6c2c6f04c479f01c728717bda48"
+		JDK_SHA256="8c96ff899fd0916ac94337dde4d45fea5bb932badde2ee427dedc40ad8534286"
 	;;
 	"Linux armv7l jdk")
 		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-arm32-vfp-hflt.tar.gz"
@@ -29,19 +29,54 @@ case "$OS $ARCH $TYPE" in
 		JDK_SHA256="197b45dd685212307fa8affa9bdba0549b826dcafd770e4b20c2feaffd4b787b"
 	;;
 
+	"Linux x86_64 jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-amd64.tar.gz"
+		jre_SHA256="606e63173c0325734d5475d1dd987d5debeed1aa1817632f31edaed9372fd12f"
+	;;
+	"Linux i686 jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-i586.tar.gz"
+		jre_SHA256="dc7c1fc600790506f4ffa707605d1202ec1f362e4be74945cea1a24bb807dd38"
+	;;
+	"Linux aarch64 jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-aarch64.tar.gz"
+		jre_SHA256="cdb1da7d98ce4c71ff90fa09ce53a45a82e69ccc06386182f675e58edc865346"
+	;;
+	"Linux armv7l jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-arm32-vfp-hflt.tar.gz"
+		jre_SHA256="af3a1d0852361879263fc164a71a008fb891c90aadd01f4b759e758d7ef8857a"
+	;;
+	"Linux ppc64le jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-ppc64le.tar.gz"
+		jre_SHA256="ce743577b9fcc8002354d4ecff42b4657ced98db958a10cd24f6866492649bd3"
+	;;
+	
 	"Darwin x86_64 jdk")
-		JDK_URL="https://download.java.net/java/GA/jdk16.0.1/7147401fd7354114ac51ef3e1328291f/9/GPL/openjdk-16.0.1_osx-x64_bin.tar.gz"
-		JDK_SHA256="6098f839954439d4916444757c542c1b8778a32461706812d41cc8bbefce7f2f"
+		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-macos-amd64.zip"
+		JDK_SHA256="a42eab3978fa02f239fb4106d58340e83464080e91b131dbd88477185b422fba"
+	;;
+
+	"Darwin x86_64 jre")
+		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-macos-amd64.zip"
+		JDK_SHA256="3695ca637adf73993a1b33fcda686715451a9c23fa805120ca80af586042917e"
 	;;
 
 	"Windows x86_64 jdk")
-		JDK_URL="https://download.java.net/java/GA/jdk16.0.1/7147401fd7354114ac51ef3e1328291f/9/GPL/openjdk-16.0.1_windows-x64_bin.zip"
-		JDK_SHA256="733b45b09463c97133d70c2368f1b9505da58e88f2c8a84358dd4accfd06a7a4"
+		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-windows-amd64.zip"
+		JDK_SHA256="2e11bba34456e02d65f85cb02fc7f0c713209f24214c7537ef1de9fc2307c495"
 	;;
 	"Windows x86 jdk")
 		JDK_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-windows-i586.zip"
 		JDK_SHA256="429c96779a94a7e9e266acc304c77e79c5524f4d7c1410c62869e1720459e7c7"
 	;;
+
+	"Windows x86_64 jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-amd64.zip"
+		jre_SHA256="9e6de85d5ca021f46074ca10559ff7e467cc1b5f72991f95031ba10f100ec122"
+	;;
+	"Windows x86 jre")
+		jre_URL="https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-i586.zip"
+		jre_SHA256="8e8fc65d632a6d62dd0892b377598c58249de6f0a3716f3a2cf70a83c4ecf53f"
+	;;	
 
 	"Linux x86_64 jfx")
 		JDK_URL="https://download2.gluonhq.com/openjfx/16/openjfx-16_linux-x64_bin-jmods.zip"
@@ -84,7 +119,7 @@ fi
 
 
 # extract and link only if explicitly requested
-if [ "$COMMAND $TYPE" != "install jdk" ]; then
+if [ "$COMMAND" != "install" ]; then
 	echo "Download complete: $JDK_TAR_GZ"
 	exit 0
 fi

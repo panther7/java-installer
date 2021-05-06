@@ -2,7 +2,7 @@
 
 INSTALLER_SCRIPT="get-java.sh"
 INSTALLER_FILE="$SYNOPKG_PKGDEST/$INSTALLER_SCRIPT"
-INSTALLER_URL="https://raw.githubusercontent.com/rednoah/java-installer/@{branch}/release/$INSTALLER_SCRIPT"
+INSTALLER_URL="https://raw.githubusercontent.com/panther7/java-installer/@{branch}/release/$INSTALLER_SCRIPT"
 SIGNATURE_FILE="$INSTALLER_FILE.asc"
 SIGNATURE_URL="$INSTALLER_URL.asc"
 

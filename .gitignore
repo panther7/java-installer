@@ -5,4 +5,5 @@ release
 
 .ant-targets-build.xml
 *.properties
+!package.properties
 *.DS_Store

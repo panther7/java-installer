@@ -20,11 +20,11 @@
 		<syno:spk destdir="${dir.dist}" name="${package}" version="${version}" arch="noarch">
 			<info name="displayname" value="${title}" />
 			<info name="description" value="${description}" />
-			<info name="maintainer" value="rednoah" />
-			<info name="maintainer_url" value="https://github.com/rednoah/java-installer" />
-			<info name="distributor" value="rednoah" />
-			<info name="distributor_url" value="https://github.com/rednoah/java-installer" />
-			<info name="support_url" value="https://github.com/rednoah/java-installer/issues" />
+			<info name="maintainer" value="panther7" />
+			<info name="maintainer_url" value="https://github.com/panther7/java-installer" />
+			<info name="distributor" value="panther7" />
+			<info name="distributor_url" value="https://github.com/panther7/java-installer" />
+			<info name="support_url" value="https://github.com/panther7/java-installer/issues" />
 			<info name="ctl_stop" value="no" />
 			<info name="silent_install" value="no" />
 			<info name="silent_upgrade" value="yes" />
@@ -47,9 +47,9 @@
 	<target name="syno-repo" description="Update Synology Package Source" depends="stats">
 		<syno:package-source file="${basedir}/syno.json">
 			<spk file="${dir.dist}/${package}-${version}-noarch.spk">
-				<info name="link" value="https://github.com/rednoah/java-installer/releases/download/${version}/${package}-${version}-noarch.spk" />
+				<info name="link" value="https://github.com/panther7/java-installer/releases/download/${version}/${package}-${version}-noarch.spk" />
 				<info name="download_count" value="${download_count}" />
-				<thumbnail url="https://raw.githubusercontent.com/rednoah/java-installer/master/package/synology/images/java_256.png" />
+				<thumbnail url="https://raw.githubusercontent.com/panther7/java-installer/master/package/synology/images/java_256.png" />
 			</spk>
 		</syno:package-source>
 	</target>
@@ -61,7 +61,7 @@
 				<include name="**/*_routines" />
 				<include name="**/*.sh" />
 				<include name="**/*.cfg" />
-				<include name="**/*.png" />
+				<include name="**/*.gif" />
 				<include name="**/private_key" />
 				<include name="**/certificate" />
 			</fileset>
@@ -130,7 +130,7 @@
 				<restrict>
 					<filesets />
 					<not>
-						<name name="**/*.png" />
+						<name name="*.gif" />
 					</not>
 				</restrict>
 				<filterset begintoken="@{" endtoken="}">
@@ -145,7 +145,7 @@
 			<copy todir="@{todir}" overwrite="yes" verbose="yes">
 				<restrict>
 					<filesets />
-					<name name="**/*.png" />
+					<name name="*.gif" />
 				</restrict>
 				<filtermapper>
 					<replacetokens begintoken="@{" endtoken="}" propertiesResource="package.properties" />

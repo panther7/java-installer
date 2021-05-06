@@ -9,17 +9,17 @@
             "dname":"Java Installer",
             "desc":"Java Installer will help you install and update Java. Supported platforms include armv7l, aarch64, i586 and x86_64 models. During the install, this package will download the latest OpenJDK binaries (180 MB) for your platform. This may take a while.",
             "maintainer":"rednoah",
-            "maintainer_url":"https://github.com/rednoah/java-installer",
+            "maintainer_url":"https://github.com/panther7/java-installer",
             "distributor":"rednoah",
-            "distributor_url":"https://github.com/rednoah/java-installer",
+            "distributor_url":"https://github.com/panther7/java-installer",
             "start":false,
             "qstart":false,
             "qinst":false,
             "qupgrade":true,
             "thumbnail":[
-                "https://raw.githubusercontent.com/rednoah/java-installer/master/package/synology/images/thumb_256.png"
+                "https://raw.githubusercontent.com/panther7/java-installer/master/package/synology/images/thumb_256.png"
             ],
-            "link":"https://github.com/rednoah/java-installer/releases/download/2.13/java-installer-2.13-noarch.spk",
+            "link":"https://github.com/panther7/java-installer/releases/download/2.13/java-installer-2.13-noarch.spk",
             "download_count":"28955",
             "md5":"4879c9ec77b2153d34689ca530db6038",
             "sha256":"9312beaba1eb78e88bd26917c7d98c6f87dd8ba6e7b9abffc5eac121184da5bf",
