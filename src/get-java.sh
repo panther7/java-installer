@@ -3,7 +3,7 @@
 # @{title} for @{jdk.name} @{jdk.version}
 
 COMMAND=${1:-get}        # get | install
-TYPE=${2:-jdk}           # jre | jdk
+TYPE=${2:-jre}           # jre | jdk
 ARCH=${3:-`uname -m`}    # x86_64 | i686 | aarch64 | armv7l | etc
 OS=${4:-`uname -s`}      # Linux | Darwin | Windows | etc
 

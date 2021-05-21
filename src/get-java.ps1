@@ -3,7 +3,7 @@
 
 param (
 	[string]$command = 'get',
-	[string]$type = 'jdk',
+	[string]$type = 'jre',
 	[string]$arch = 'x86_64',
 	[string]$os = 'Windows',
 	[string]$out

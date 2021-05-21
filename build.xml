@@ -133,8 +133,8 @@
 					<!-- exclude binary files so they don't get mangled (see https://ant.apache.org/manual/Tasks/copy.html#encoding) -->
 					<not>
 						<or>
-							<name name="**/*.png" />
-							<name name="**/*.gif" />
+							<name name="*.png" />
+							<name name="*.gif" />
 						</or>
 					</not>
 				</restrict>
@@ -152,8 +152,8 @@
 				<restrict>
 					<filesets />
 					<or>
-						<name name="**/*.png" />
-						<name name="**/*.gif" />
+						<name name="*.png" />
+						<name name="*.gif" />
 					</or>
 				</restrict>
 				<filtermapper>
