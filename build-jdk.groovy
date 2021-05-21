@@ -4,11 +4,11 @@ def openjdk = []
 
 // BellSoft Liberica JDK/JRE for embedded devices
 def liberica = [
-	[type: 'jdk', os: 'linux',   arch: 'aarch64', pkg: 'linux-aarch64.tar.gz'],
+    [type: 'jdk', os: 'linux',   arch: 'aarch64', pkg: 'linux-aarch64.tar.gz'],
 	[type: 'jdk', os: 'linux',   arch: 'armv7l',  pkg: 'linux-arm32-vfp-hflt.tar.gz'],
 	[type: 'jdk', os: 'linux',   arch: 'ppc64le', pkg: 'linux-ppc64le.tar.gz'],
 	[type: 'jdk', os: 'linux',   arch: 'x86',     pkg: 'linux-i586.tar.gz'],
-	[type: 'jdk', os: 'linux',   arch: 'x64',     pkg: 'linux-amd64.tar.gz'],	
+	[type: 'jdk', os: 'linux',   arch: 'x64',     pkg: 'linux-amd64.tar.gz'],
 	[type: 'jdk', os: 'windows', arch: 'x86',     pkg: 'windows-i586.zip'],
 	[type: 'jdk', os: 'windows', arch: 'x64',     pkg: 'windows-amd64.zip'],
 	[type: 'jdk', os: 'mac',     arch: 'x64',     pkg: 'macos-amd64.zip'],
