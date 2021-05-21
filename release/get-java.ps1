@@ -24,7 +24,7 @@ Switch ("$os $arch $type") {
 	}
 	"Linux aarch64 jdk" {
 		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-aarch64.tar.gz"
-		$JDK_SHA256 = "8c96ff899fd0916ac94337dde4d45fea5bb932badde2ee427dedc40ad8534286"
+		$JDK_SHA256 = "650f04865bdd3267ab7d1ae459dc34a430b6b6c2c6f04c479f01c728717bda48"
 	}
 	"Linux armv7l jdk" {
 		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jdk16.0.1+9-linux-arm32-vfp-hflt.tar.gz"
@@ -36,24 +36,24 @@ Switch ("$os $arch $type") {
 	}
 
 	"Linux x86_64 jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-amd64.tar.gz"
-		$jre_SHA256 = "606e63173c0325734d5475d1dd987d5debeed1aa1817632f31edaed9372fd12f"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-amd64.tar.gz"
+		$JDK_SHA256 = "606e63173c0325734d5475d1dd987d5debeed1aa1817632f31edaed9372fd12f"
 	}
 	"Linux i686 jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-i586.tar.gz"
-		$jre_SHA256 = "dc7c1fc600790506f4ffa707605d1202ec1f362e4be74945cea1a24bb807dd38"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-i586.tar.gz"
+		$JDK_SHA256 = "dc7c1fc600790506f4ffa707605d1202ec1f362e4be74945cea1a24bb807dd38"
 	}
 	"Linux aarch64 jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-aarch64.tar.gz"
-		$jre_SHA256 = "cdb1da7d98ce4c71ff90fa09ce53a45a82e69ccc06386182f675e58edc865346"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-aarch64.tar.gz"
+		$JDK_SHA256 = "cdb1da7d98ce4c71ff90fa09ce53a45a82e69ccc06386182f675e58edc865346"
 	}
 	"Linux armv7l jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-arm32-vfp-hflt.tar.gz"
-		$jre_SHA256 = "af3a1d0852361879263fc164a71a008fb891c90aadd01f4b759e758d7ef8857a"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-arm32-vfp-hflt.tar.gz"
+		$JDK_SHA256 = "af3a1d0852361879263fc164a71a008fb891c90aadd01f4b759e758d7ef8857a"
 	}
 	"Linux ppc64le jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-ppc64le.tar.gz"
-		$jre_SHA256 = "ce743577b9fcc8002354d4ecff42b4657ced98db958a10cd24f6866492649bd3"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-linux-ppc64le.tar.gz"
+		$JDK_SHA256 = "ce743577b9fcc8002354d4ecff42b4657ced98db958a10cd24f6866492649bd3"
 	}	
 
 	"Darwin x86_64 jdk" {
@@ -76,12 +76,12 @@ Switch ("$os $arch $type") {
 	}
 
 	"Windows x86_64 jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-amd64.zip"
-		$jre_SHA256 = "9e6de85d5ca021f46074ca10559ff7e467cc1b5f72991f95031ba10f100ec122"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-amd64.zip"
+		$JDK_SHA256 = "5ded21a351d1fc8823a647b63bdd364009ab84945efcbc84ba44ec0e73133878"
 	}
 	"Windows x86 jre" {
-		$jre_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-i586.zip"
-		$jre_SHA256 = "8e8fc65d632a6d62dd0892b377598c58249de6f0a3716f3a2cf70a83c4ecf53f"
+		$JDK_URL = "https://download.bell-sw.com/java/16.0.1+9/bellsoft-jre16.0.1+9-windows-i586.zip"
+		$JDK_SHA256 = "8e8fc65d632a6d62dd0892b377598c58249de6f0a3716f3a2cf70a83c4ecf53f"
 	}
 
 	"Linux x86_64 jfx" {
